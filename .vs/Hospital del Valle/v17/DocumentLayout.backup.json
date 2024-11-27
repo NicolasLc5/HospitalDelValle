@@ -1,0 +1,384 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\migrations\\20241127154032_primera2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\migrations\\20241127154032_primera2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153800_primera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital del Valle\\Migrations\\20241127153800_primera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153640_primera4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital del Valle\\Migrations\\20241127153640_primera4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\solicitudmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\solicitudmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\pruebalaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\pruebalaboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\prescripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\prescripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\pacientehospitalizado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\pacientehospitalizado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\notificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\inventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\inventariofarmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\historialclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\historialclinico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153443_primera3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital del Valle\\Migrations\\20241127153443_primera3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127152333_primera2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hospital del Valle\\Migrations\\20241127152333_primera2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|c:\\users\\kiurt\\documents\\github\\hospital del valle\\hospital del valle\\hospital del valle.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{67ABCA05-0CA2-4033-913E-9E27FA2932C4}|Hospital del Valle\\Hospital del Valle.csproj|solutionrelative:hospital del valle\\hospital del valle.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 385,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241127154032_primera2.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127154032_primera2.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Migrations\\20241127154032_primera2.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127154032_primera2.cs",
+              "RelativeToolTip": "Hospital del Valle\\Migrations\\20241127154032_primera2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:40:33.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20241127153800_primera.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153800_primera.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Migrations\\20241127153800_primera.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153800_primera.cs",
+              "RelativeToolTip": "Hospital del Valle\\Migrations\\20241127153800_primera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:38:01.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241127153640_primera4.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153640_primera4.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Migrations\\20241127153640_primera4.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153640_primera4.cs",
+              "RelativeToolTip": "Hospital del Valle\\Migrations\\20241127153640_primera4.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:36:41.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PruebaLaboratorio.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\PruebaLaboratorio.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\PruebaLaboratorio.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\PruebaLaboratorio.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\PruebaLaboratorio.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwB8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:00:05.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SolicitudMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\SolicitudMaterial.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\SolicitudMaterial.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\SolicitudMaterial.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\SolicitudMaterial.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:01:58.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Prescripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Prescripcion.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\Prescripcion.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Prescripcion.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\Prescripcion.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwEkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:59:26.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Hospital del Valle\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:43:32.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cita.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Cita.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\Cita.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Cita.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\Cita.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:57:23.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Pago.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\Pago.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Pago.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\Pago.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:01:06.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PacienteHospitalizado.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\PacienteHospitalizado.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\PacienteHospitalizado.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\PacienteHospitalizado.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\PacienteHospitalizado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:00:25.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Notificacion.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Notificacion.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\Notificacion.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Notificacion.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\Notificacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:02:30.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Medicamento.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Medicamento.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\Medicamento.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Medicamento.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\Medicamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:58:38.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InventarioFarmacia.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\InventarioFarmacia.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\InventarioFarmacia.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\InventarioFarmacia.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\InventarioFarmacia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:01:31.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HistorialClinico.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\HistorialClinico.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\HistorialClinico.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\HistorialClinico.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\HistorialClinico.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:58:00.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20241127153443_primera3.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153443_primera3.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Migrations\\20241127153443_primera3.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127153443_primera3.cs",
+              "RelativeToolTip": "Hospital del Valle\\Migrations\\20241127153443_primera3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:34:44.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Models\\Usuario.cs",
+              "RelativeToolTip": "Hospital del Valle\\Models\\Usuario.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:56:08.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20241127152333_primera2.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127152333_primera2.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Migrations\\20241127152333_primera2.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Migrations\\20241127152333_primera2.cs",
+              "RelativeToolTip": "Hospital del Valle\\Migrations\\20241127152333_primera2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:23:33.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\appsettings.json",
+              "RelativeDocumentMoniker": "Hospital del Valle\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\appsettings.json",
+              "RelativeToolTip": "Hospital del Valle\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-27T15:02:32.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Program.cs",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Program.cs",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Program.cs",
+              "RelativeToolTip": "Hospital del Valle\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:45:25.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Hospital del Valle",
+              "DocumentMoniker": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Hospital del Valle.csproj",
+              "RelativeDocumentMoniker": "Hospital del Valle\\Hospital del Valle.csproj",
+              "ToolTip": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Hospital del Valle.csproj",
+              "RelativeToolTip": "Hospital del Valle\\Hospital del Valle.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-27T14:42:49.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 634,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 210,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
