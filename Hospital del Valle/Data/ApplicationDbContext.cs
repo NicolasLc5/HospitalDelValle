@@ -29,6 +29,52 @@ namespace Hospital_del_Valle.Data
         public DbSet<Notificacion> Notificaciones { get; set; }
 
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Cita>()
+                .HasOne(c => c.Paciente)
+                .WithMany(u => u.CitasComoPaciente)
+                .HasForeignKey(c => c.PacienteID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Cita>()
+                .HasOne(c => c.Medico)
+                .WithMany(u => u.CitasComoMedico)
+                .HasForeignKey(c => c.MedicoID)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+
+            modelBuilder.Entity<Prescripcion>()
+                .HasOne(p => p.Paciente)
+                .WithMany(u => u.PrescripcionesComoPaciente)
+                .HasForeignKey(p => p.PacienteID)
+                .OnDelete(DeleteBehavior.Restrict); 
+
+            modelBuilder.Entity<Prescripcion>()
+                .HasOne(p => p.Medico)
+                .WithMany(u => u.PrescripcionesComoMedico) 
+                .HasForeignKey(p => p.MedicoID)
+                .OnDelete(DeleteBehavior.Restrict); 
+
+            modelBuilder.Entity<Prescripcion>()
+                .HasOne(p => p.Medicamento)
+                .WithMany() // Si no hay una relación inversa
+                .HasForeignKey(p => p.MedicamentoID)
+                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<PruebaLaboratorio>()
+                .HasOne(pl => pl.Medico)
+                .WithMany()
+                .HasForeignKey(pl => pl.MedicoID)
+                .OnDelete(DeleteBehavior.Cascade); 
+
+            modelBuilder.Entity<PruebaLaboratorio>()
+                .HasOne(pl => pl.Paciente)
+                .WithMany()
+                .HasForeignKey(pl => pl.PacienteID)
+                .OnDelete(DeleteBehavior.NoAction); 
+
+        }
 
     }
 }

@@ -15,6 +15,7 @@ namespace Hospital_del_Valle.Models
         public int PacienteID { get; set; }
 
         // Relación con la entidad Usuario (Paciente)
+        [InverseProperty("CitasComoPaciente")]
         public Usuario Paciente { get; set; }
 
         [Required]
@@ -23,6 +24,7 @@ namespace Hospital_del_Valle.Models
         public int MedicoID { get; set; }
 
         // Relación con la entidad Usuario (Medico)
+        [InverseProperty("CitasComoMedico")]
         public Usuario Medico { get; set; }
 
         [Required]

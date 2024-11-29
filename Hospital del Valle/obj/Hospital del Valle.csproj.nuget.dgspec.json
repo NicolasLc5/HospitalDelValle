@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Hospital del Valle.csproj": {}
+    "C:\\Users\\Kiurt\\Documents\\GitHub\\HospitalDelValle\\Hospital del Valle\\Hospital del Valle.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Hospital del Valle.csproj": {
+    "C:\\Users\\Kiurt\\Documents\\GitHub\\HospitalDelValle\\Hospital del Valle\\Hospital del Valle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Hospital del Valle.csproj",
+        "projectUniqueName": "C:\\Users\\Kiurt\\Documents\\GitHub\\HospitalDelValle\\Hospital del Valle\\Hospital del Valle.csproj",
         "projectName": "Hospital del Valle",
-        "projectPath": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Hospital del Valle.csproj",
+        "projectPath": "C:\\Users\\Kiurt\\Documents\\GitHub\\HospitalDelValle\\Hospital del Valle\\Hospital del Valle.csproj",
         "packagesPath": "C:\\Users\\Kiurt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\obj\\",
+        "outputPath": "C:\\Users\\Kiurt\\Documents\\GitHub\\HospitalDelValle\\Hospital del Valle\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kiurt\\AppData\\Roaming\\NuGet\\NuGet.Config",

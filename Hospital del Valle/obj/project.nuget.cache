@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vL0ZDvBHeOM=",
+  "dgSpecHash": "dsj5UtnzwvQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kiurt\\Documents\\GitHub\\Hospital del Valle\\Hospital del Valle\\Hospital del Valle.csproj",
+  "projectFilePath": "C:\\Users\\Kiurt\\Documents\\GitHub\\HospitalDelValle\\Hospital del Valle\\Hospital del Valle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kiurt\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Kiurt\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
