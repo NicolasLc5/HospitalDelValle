@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\LYF\Farmacia\Auxi\paci\" />
     <Folder Include="Pages\LYF\Laboratorio\" />
   </ItemGroup>
 

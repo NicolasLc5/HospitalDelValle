@@ -1,0 +1,72 @@
+﻿@page
+@model Hospital_del_Valle.Pages.LYF.Farmacia.Auxi.Ordenes.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescripcion[0].Paciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescripcion[0].Medico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescripcion[0].FechaPrescripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescripcion[0].Medicamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescripcion[0].Dosis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescripcion[0].Duracion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescripcion[0].Indicaciones)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Prescripcion) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paciente.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medico.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPrescripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicamento.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dosis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Indicaciones)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PrescripcionID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PrescripcionID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PrescripcionID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Hospital_del_Valle.Data;
 using Hospital_del_Valle.Models;
 
-namespace Hospital_del_Valle.Pages.LYF.Farmacia.Recibir
+namespace Hospital_del_Valle.Pages.LYF.Farmacia.Auxi.Ordenes
 {
     public class EditModel : PageModel
     {

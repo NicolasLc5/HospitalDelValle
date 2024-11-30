@@ -15,7 +15,7 @@ namespace Hospital_del_Valle.Models
 
         // Relación con la entidad Usuario (Paciente)
         [InverseProperty("PrescripcionesComoPaciente")]
-        public Usuario Paciente { get; set; }
+        public Usuario? Paciente { get; set; }
 
         [Required]
         [ForeignKey(nameof(Usuario))]
@@ -23,7 +23,7 @@ namespace Hospital_del_Valle.Models
 
         // Relación con la entidad Usuario (Medico)
         [InverseProperty("PrescripcionesComoMedico")]
-        public Usuario Medico { get; set; }
+        public Usuario? Medico { get; set; }
 
         [Required]
         public DateTime FechaPrescripcion { get; set; } = DateTime.Now;
@@ -32,7 +32,7 @@ namespace Hospital_del_Valle.Models
         [ForeignKey(nameof(Medicamento))]
         public int MedicamentoID { get; set; }
 
-        public Medicamento Medicamento { get; set; }
+        public Medicamento? Medicamento { get; set; }
 
         public string Dosis { get; set; }
         public string Duracion { get; set; }

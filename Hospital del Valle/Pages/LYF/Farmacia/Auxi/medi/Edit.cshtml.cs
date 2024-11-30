@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Hospital_del_Valle.Data;
 using Hospital_del_Valle.Models;
 
-namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
+namespace Hospital_del_Valle.Pages.LYF.Farmacia.Auxi.medi
 {
     public class EditModel : PageModel
     {
@@ -21,7 +21,7 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
         }
 
         [BindProperty]
-        public InventarioFarmacia InventarioFarmacia { get; set; } = default!;
+        public Usuario Usuario { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,13 +30,12 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
                 return NotFound();
             }
 
-            var inventariofarmacia =  await _context.InventarioFarmacia.FirstOrDefaultAsync(m => m.InventarioID == id);
-            if (inventariofarmacia == null)
+            var usuario =  await _context.Usuarios.FirstOrDefaultAsync(m => m.UsuarioID == id);
+            if (usuario == null)
             {
                 return NotFound();
             }
-            InventarioFarmacia = inventariofarmacia;
-           ViewData["MedicamentoID"] = new SelectList(_context.Medicamentos, "MedicamentoID", "Nombre");
+            Usuario = usuario;
             return Page();
         }
 
@@ -49,7 +48,7 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
                 return Page();
             }
 
-            _context.Attach(InventarioFarmacia).State = EntityState.Modified;
+            _context.Attach(Usuario).State = EntityState.Modified;
 
             try
             {
@@ -57,7 +56,7 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!InventarioFarmaciaExists(InventarioFarmacia.InventarioID))
+                if (!UsuarioExists(Usuario.UsuarioID))
                 {
                     return NotFound();
                 }
@@ -70,9 +69,9 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
             return RedirectToPage("./Index");
         }
 
-        private bool InventarioFarmaciaExists(int id)
+        private bool UsuarioExists(int id)
         {
-            return _context.InventarioFarmacia.Any(e => e.InventarioID == id);
+            return _context.Usuarios.Any(e => e.UsuarioID == id);
         }
     }
 }

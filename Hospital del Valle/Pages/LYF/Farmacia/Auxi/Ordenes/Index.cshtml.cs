@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Hospital_del_Valle.Data;
 using Hospital_del_Valle.Models;
 
-namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
+namespace Hospital_del_Valle.Pages.LYF.Farmacia.Auxi.Ordenes
 {
     public class IndexModel : PageModel
     {
@@ -19,12 +19,14 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
             _context = context;
         }
 
-        public IList<InventarioFarmacia> InventarioFarmacia { get;set; } = default!;
+        public IList<Prescripcion> Prescripcion { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            InventarioFarmacia = await _context.InventarioFarmacia
-                .Include(i => i.medicamento).ToListAsync();
+            Prescripcion = await _context.Prescripciones
+                .Include(p => p.Medicamento)
+                .Include(p => p.Medico)
+                .Include(p => p.Paciente).ToListAsync();
         }
     }
 }

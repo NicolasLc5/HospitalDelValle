@@ -33,11 +33,11 @@ namespace Hospital_del_Valle.Models
         [Required]
         public string Contraseña { get; set; }
         // Relación con las citas
-        public ICollection<Cita> CitasComoPaciente { get; set; }
-        public ICollection<Cita> CitasComoMedico { get; set; }
+        public ICollection<Cita>? CitasComoPaciente { get; set; }
+        public ICollection<Cita>? CitasComoMedico { get; set; }
 
         // Relación con Prescripciones
-        public ICollection<Prescripcion> PrescripcionesComoPaciente { get; set; }
-        public ICollection<Prescripcion> PrescripcionesComoMedico { get; set; }
+        public ICollection<Prescripcion>? PrescripcionesComoPaciente { get; set; }
+        public ICollection<Prescripcion>? PrescripcionesComoMedico { get; set; }
     }
 }

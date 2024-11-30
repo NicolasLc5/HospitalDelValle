@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Hospital_del_Valle.Data;
 using Hospital_del_Valle.Models;
 
-namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
+namespace Hospital_del_Valle.Pages.LYF.Farmacia.Auxi.medi
 {
     public class DeleteModel : PageModel
     {
@@ -20,7 +20,7 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
         }
 
         [BindProperty]
-        public InventarioFarmacia InventarioFarmacia { get; set; } = default!;
+        public Usuario Usuario { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -29,15 +29,15 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
                 return NotFound();
             }
 
-            var inventariofarmacia = await _context.InventarioFarmacia.FirstOrDefaultAsync(m => m.InventarioID == id);
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(m => m.UsuarioID == id);
 
-            if (inventariofarmacia == null)
+            if (usuario == null)
             {
                 return NotFound();
             }
             else
             {
-                InventarioFarmacia = inventariofarmacia;
+                Usuario = usuario;
             }
             return Page();
         }
@@ -49,11 +49,11 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
                 return NotFound();
             }
 
-            var inventariofarmacia = await _context.InventarioFarmacia.FindAsync(id);
-            if (inventariofarmacia != null)
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario != null)
             {
-                InventarioFarmacia = inventariofarmacia;
-                _context.InventarioFarmacia.Remove(InventarioFarmacia);
+                Usuario = usuario;
+                _context.Usuarios.Remove(Usuario);
                 await _context.SaveChangesAsync();
             }
 

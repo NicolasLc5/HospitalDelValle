@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Hospital_del_Valle.Data;
 using Hospital_del_Valle.Models;
 
-namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
+namespace Hospital_del_Valle.Pages.LYF.Farmacia.Auxi.medi
 {
     public class CreateModel : PageModel
     {
@@ -21,12 +21,11 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
 
         public IActionResult OnGet()
         {
-        ViewData["MedicamentoID"] = new SelectList(_context.Medicamentos, "MedicamentoID", "Nombre");
             return Page();
         }
 
         [BindProperty]
-        public InventarioFarmacia InventarioFarmacia { get; set; } = default!;
+        public Usuario Usuario { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
@@ -36,7 +35,7 @@ namespace Hospital_del_Valle.Pages.LYF.Farmacia.Inventario
                 return Page();
             }
 
-            _context.InventarioFarmacia.Add(InventarioFarmacia);
+            _context.Usuarios.Add(Usuario);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
