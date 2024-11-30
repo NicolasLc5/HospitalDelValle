@@ -1,0 +1,69 @@
+﻿@page
+@model Hospital_del_Valle.Pages.LYF.Farmacia.Recibir.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Prescripcion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Prescripcion.PrescripcionID" />
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Prescripcion.PacienteID" class="control-label"></label>
+                <select asp-for="Prescripcion.PacienteID" class="form-control" asp-items="ViewBag.PacienteID"></select>
+                <span asp-validation-for="Prescripcion.PacienteID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Prescripcion.MedicoID" class="control-label"></label>
+                <select asp-for="Prescripcion.MedicoID" class="form-control" asp-items="ViewBag.MedicoID"></select>
+                <span asp-validation-for="Prescripcion.MedicoID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Prescripcion.FechaPrescripcion" class="control-label"></label>
+                <input asp-for="Prescripcion.FechaPrescripcion" class="form-control" />
+                <span asp-validation-for="Prescripcion.FechaPrescripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Prescripcion.MedicamentoID" class="control-label"></label>
+                <select asp-for="Prescripcion.MedicamentoID" class="form-control" asp-items="ViewBag.MedicamentoID"></select>
+                <span asp-validation-for="Prescripcion.MedicamentoID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescripcion.Dosis" class="control-label"></label>
+                <input asp-for="Prescripcion.Dosis" class="form-control" />
+                <span asp-validation-for="Prescripcion.Dosis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescripcion.Duracion" class="control-label"></label>
+                <input asp-for="Prescripcion.Duracion" class="form-control" />
+                <span asp-validation-for="Prescripcion.Duracion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescripcion.Indicaciones" class="control-label"></label>
+                <input asp-for="Prescripcion.Indicaciones" class="form-control" />
+                <span asp-validation-for="Prescripcion.Indicaciones" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

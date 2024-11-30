@@ -1,0 +1,74 @@
+﻿@page
+@model Hospital_del_Valle.Pages.LYF.Farmacia.Recibir.IndexModel
+
+@{
+    ViewData["Title"] = "Órdenes Médicas";
+}
+
+<div class="container">
+    <!-- Encabezado -->
+    <div class="d-flex justify-content-between align-items-center my-4">
+        <h1 class="fw-bold text-primary">Órdenes Médicas</h1>
+        <input type="text" id="searchInput" class="form-control w-50" placeholder="Buscar por paciente..." onkeyup="filterTable()" />
+    </div>
+
+    <!-- Tabla de prescripciones -->
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center" id="ordersTable">
+            <thead class="table-primary">
+                <tr>
+                    <th>Paciente</th>
+                    <th>Médico</th>
+                    <th>Fecha</th>
+                    <th>Medicamento</th>
+                    <th>Dosis</th>
+                    <th>Duración</th>
+                    <th>Indicaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Prescripcion)
+                {
+                    <tr>
+                        <td>@item.Paciente.Apellido</td>
+                        <td>@item.Medico.Apellido</td>
+                        <td>@item.FechaPrescripcion.ToShortDateString()</td>
+                        <td>@item.Medicamento.Nombre</td>
+                        <td>@item.Dosis</td>
+                        <td>@item.Duracion</td>
+                        <td>@item.Indicaciones</td>
+                        <td>
+                            <a asp-page="./Details" asp-route-id="@item.PrescripcionID" class="btn btn-sm btn-info">Ver</a>
+                            <a asp-page="./Delete" asp-route-id="@item.PrescripcionID" class="btn btn-sm btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Filtrar tabla por paciente
+        function filterTable() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById('ordersTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let match = false;
+                if (cells.length > 0) {
+                    const patientName = cells[0].textContent || cells[0].innerText;
+                    if (patientName.toLowerCase().indexOf(filter) > -1) {
+                        match = true;
+                    }
+                }
+                rows[i].style.display = match ? '' : 'none';
+            }
+        }
+    </script>
+}

@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hospital_del_Valle
 build_property.RootNamespace = Hospital_del_Valle
@@ -24,6 +32,66 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Inventario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXEludmVudGFyaW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Inventario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXEludmVudGFyaW9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Inventario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXEludmVudGFyaW9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Inventario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXEludmVudGFyaW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Inventario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXEludmVudGFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Medicamentos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXE1lZGljYW1lbnRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Medicamentos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXE1lZGljYW1lbnRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Medicamentos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXE1lZGljYW1lbnRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Medicamentos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXE1lZGljYW1lbnRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Medicamentos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXE1lZGljYW1lbnRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Recibir/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXFJlY2liaXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Recibir/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXFJlY2liaXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Farmacia/Recibir/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEZhcm1hY2lhXFJlY2liaXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/LYF/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTFlGXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kiurt/Documents/GitHub/HospitalDelValle/Hospital del Valle/Pages/Privacy.cshtml]

@@ -1,0 +1,39 @@
+﻿@page
+@model Hospital_del_Valle.Pages.LYF.Farmacia.IndexModel
+@{
+    ViewData["Title"] = "Farmacia";
+}
+
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold text-primary">Bienvenido al Área de Farmacia</h1>
+        <p class="lead">Seleccione una de las opciones para gestionar:</p>
+    </div>
+
+    <div class="row text-center mt-5">
+        <!-- Botón Inventario -->
+        <div class="col-md-4 mb-3">
+            <a asp-page="/LYF/Farmacia/Inventario/Index" class="btn btn-warning btn-lg w-100 shadow">
+                <i class="bi bi-boxes"></i> Ver Inventario
+            </a>
+        </div>
+        <!-- Botón Medicamentos -->
+        <div class="col-md-4 mb-3">
+            <a asp-page="/LYF/Farmacia/Medicamentos/Index" class="btn btn-success btn-lg w-100 shadow">
+                <i class="bi bi-capsule"></i> Medicamentos
+            </a>
+        </div>
+        <!-- Botón Órdenes -->
+        <div class="col-md-4 mb-3">
+            <a asp-page="/LYF/Farmacia/Recibir/Index" class="btn btn-info btn-lg w-100 shadow">
+                <i class="bi bi-clipboard-data"></i> Órdenes
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Puedes agregar funcionalidad adicional aquí si es necesario
+    </script>
+}

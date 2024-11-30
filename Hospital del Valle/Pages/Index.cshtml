@@ -1,10 +1,45 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold text-primary">Hospital del Valle</h1>
+        <p class="lead">Seleccione un área para gestionar:</p>
+    </div>
+
+    <div class="row text-center mt-5">
+        <!-- Botón Internación -->
+        <div class="col-md-3">
+            <a asp-page="/Internacion" class="btn btn-primary btn-lg w-100 shadow">
+                <i class="bi bi-hospital"></i> Internación
+            </a>
+        </div>
+        <!-- Botón Laboratorio y Farmacia -->
+        <div class="col-md-3">
+            <a asp-page="/LYF/Index" class="btn btn-success btn-lg w-100 shadow">
+                <i class="bi bi-beaker"></i> Laboratorio y Farmacia
+            </a>
+        </div>
+        <!-- Botón Personal Médico -->
+        <div class="col-md-3">
+            <a asp-page="/PersonalMedico" class="btn btn-info btn-lg w-100 shadow">
+                <i class="bi bi-person-badge"></i> Personal Médico
+            </a>
+        </div>
+        <!-- Botón Reservas -->
+        <div class="col-md-3">
+            <a asp-page="/Reservas" class="btn btn-warning btn-lg w-100 shadow">
+                <i class="bi bi-calendar-check"></i> Reservas
+            </a>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        // Puedes agregar funcionalidad adicional aquí si es necesario.
+    </script>
+}

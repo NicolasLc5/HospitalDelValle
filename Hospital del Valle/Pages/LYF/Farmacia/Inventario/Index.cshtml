@@ -1,0 +1,48 @@
+﻿@page
+@model Hospital_del_Valle.Pages.LYF.Farmacia.Inventario.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InventarioFarmacia[0].medicamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InventarioFarmacia[0].StockActual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InventarioFarmacia[0].FechaUltimaActualizacion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.InventarioFarmacia) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.medicamento.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StockActual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaUltimaActualizacion)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.InventarioID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.InventarioID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.InventarioID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

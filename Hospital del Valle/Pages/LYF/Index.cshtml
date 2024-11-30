@@ -1,0 +1,33 @@
+﻿@page
+@model Hospital_del_Valle.Pages.LYF.IndexModel
+@{
+    ViewData["Title"] = "Laboratorio y Farmacia";
+}
+
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold text-primary">Laboratorio y Farmacia</h1>
+        <p class="lead">Seleccione el área que desea gestionar:</p>
+    </div>
+
+    <div class="row text-center mt-5">
+        <!-- Botón Laboratorio -->
+        <div class="col-md-6 mb-3">
+            <a asp-page="/LYF/Laboratorio/Index" class="btn btn-success btn-lg w-100 shadow">
+                <i class="bi bi-beaker"></i> Laboratorio
+            </a>
+        </div>
+        <!-- Botón Farmacia -->
+        <div class="col-md-6 mb-3">
+            <a asp-page="/LYF/Farmacia/Index" class="btn btn-info btn-lg w-100 shadow">
+                <i class="bi bi-basket"></i> Farmacia
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Espacio para funcionalidades adicionales en el futuro
+    </script>
+}

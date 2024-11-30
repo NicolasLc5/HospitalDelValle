@@ -1,0 +1,52 @@
+﻿@page
+@model Hospital_del_Valle.Pages.LYF.Farmacia.Medicamentos.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Medicamento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Medicamento.Nombre" class="control-label"></label>
+                <input asp-for="Medicamento.Nombre" class="form-control" />
+                <span asp-validation-for="Medicamento.Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medicamento.Descripcion" class="control-label"></label>
+                <input asp-for="Medicamento.Descripcion" class="form-control" />
+                <span asp-validation-for="Medicamento.Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Medicamento.Stock" class="control-label"></label>
+                <input asp-for="Medicamento.Stock" class="form-control" />
+                <span asp-validation-for="Medicamento.Stock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Medicamento.FechaVencimiento" class="control-label"></label>
+                <input asp-for="Medicamento.FechaVencimiento" class="form-control" />
+                <span asp-validation-for="Medicamento.FechaVencimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
