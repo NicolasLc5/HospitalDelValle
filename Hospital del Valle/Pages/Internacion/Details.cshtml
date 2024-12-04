@@ -1,0 +1,46 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.DetailsModel
+@{
+}
+
+<div class="container mt-5">
+    <h1>Detalles de Hospitalización</h1>
+    <hr />
+
+    @if (Model.Hospitalizacion == null)
+    {
+        <div class="alert alert-danger">
+            <strong>Error:</strong> La hospitalización solicitada no existe.
+        </div>
+    }
+    else
+    {
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <!-- Información del paciente -->
+                <h4 class="card-title">Información del Paciente</h4>
+                <p><strong>Nombre:</strong> @Model.Hospitalizacion.Paciente.Nombre @Model.Hospitalizacion.Paciente.Apellido</p>
+                <p><strong>Telefono:</strong> @Model.Hospitalizacion.Paciente.Telefono</p>
+
+                <hr />
+
+                <!-- Información de la hospitalización -->
+                <h4 class="card-title">Detalles de la Hospitalización</h4>
+                <p><strong>Habitación:</strong> Habitación @Model.Hospitalizacion.Habitacion.Numero (@Model.Hospitalizacion.Habitacion.Tipo)</p>
+                <p><strong>Fecha de Ingreso:</strong> @Model.Hospitalizacion.FechaIngreso.ToString("dd/MM/yyyy")</p>
+                <p><strong>Fecha de Alta:</strong> @(Model.Hospitalizacion.FechaAlta?.ToString("dd/MM/yyyy") ?? "Aún no asignada")</p>
+                <p><strong>Estado:</strong> @Model.Hospitalizacion.Estado</p>
+
+                <hr />
+
+                <!-- Notas de seguimiento -->
+                <h4 class="card-title">Notas de Seguimiento</h4>
+                <p>@(string.IsNullOrWhiteSpace(Model.Hospitalizacion.NotasSeguimiento) ? "No hay notas registradas." : Model.Hospitalizacion.NotasSeguimiento)</p>
+            </div>
+            <div class="card-footer text-end">
+                <a asp-page="/PacienteHospitalizado/Index" class="btn btn-secondary">Volver</a>
+                <a asp-page="/PacienteHospitalizado/Edit" asp-route-id="@Model.Hospitalizacion.HospitalizacionID" class="btn btn-primary">Editar</a>
+            </div>
+        </div>
+    }
+</div>

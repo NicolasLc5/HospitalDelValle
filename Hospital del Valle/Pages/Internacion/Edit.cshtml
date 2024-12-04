@@ -1,0 +1,92 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.EditModel
+@{
+}
+
+<div class="container mt-5">
+    <h1>Editar Hospitalización</h1>
+    <hr />
+
+    <form method="post" class="mt-4">
+        <input type="hidden" asp-for="Hospitalizacion.HospitalizacionID" />
+
+        <div class="row">
+            <!-- Selección de Paciente -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.PacienteID" class="form-label">Paciente</label>
+                <select asp-for="Hospitalizacion.PacienteID" class="form-select" disabled>
+                    @foreach (var paciente in Model.Pacientes)
+                    {
+                        <option value="@paciente.UsuarioID"
+                                selected="@(paciente.UsuarioID == Model.Hospitalizacion.PacienteID ? "selected" : null)">
+                            @paciente.Nombre @paciente.Apellido
+                        </option>
+                    }
+                </select>
+                <span asp-validation-for="Hospitalizacion.PacienteID" class="text-danger"></span>
+            </div>
+
+            <!-- Selección de Habitación -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.HabitacionID" class="form-label">Habitación</label>
+                <select asp-for="Hospitalizacion.HabitacionID" class="form-select">
+                    @foreach (var habitacion in Model.Habitaciones)
+                    {
+                        <option value="@habitacion.HabitacionID"
+                                selected="@(habitacion.HabitacionID == Model.Hospitalizacion.HabitacionID ? "selected" : null)">
+                            Habitación @habitacion.Numero (@habitacion.Tipo)
+                        </option>
+                    }
+                </select>
+                <span asp-validation-for="Hospitalizacion.HabitacionID" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Fecha de Ingreso -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.FechaIngreso" class="form-label">Fecha de Ingreso</label>
+                <input asp-for="Hospitalizacion.FechaIngreso" type="date" class="form-control" />
+                <span asp-validation-for="Hospitalizacion.FechaIngreso" class="text-danger"></span>
+            </div>
+
+            <!-- Fecha de Alta -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.FechaAlta" class="form-label">Fecha de Alta</label>
+                <input asp-for="Hospitalizacion.FechaAlta" type="date" class="form-control" />
+                <span asp-validation-for="Hospitalizacion.FechaAlta" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Estado -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.Estado" class="form-label">Estado</label>
+                <select asp-for="Hospitalizacion.Estado" class="form-select">
+                    <option value="Activo" selected="@(Model.Hospitalizacion.Estado == "Activo" ? "selected" : null)">Activo</option>
+                    <option value="Inactivo" selected="@(Model.Hospitalizacion.Estado == "Inactivo" ? "selected" : null)">Inactivo</option>
+                </select>
+                <span asp-validation-for="Hospitalizacion.Estado" class="text-danger"></span>
+            </div>
+
+            <!-- Notas de Seguimiento -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.NotasSeguimiento" class="form-label">Notas de Seguimiento</label>
+                <textarea asp-for="Hospitalizacion.NotasSeguimiento" class="form-control"></textarea>
+                <span asp-validation-for="Hospitalizacion.NotasSeguimiento" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="row mt-4">
+            <div class="col text-end">
+                <a asp-page="/Internacion/Index" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

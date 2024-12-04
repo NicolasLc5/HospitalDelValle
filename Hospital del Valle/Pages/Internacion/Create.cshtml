@@ -1,0 +1,75 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.CreateModel
+@{
+    ViewData["Title"] = "Registrar Nueva Hospitalización";
+}
+
+<div class="container mt-5">
+    <h1>Registrar Nueva Hospitalización</h1>
+    <hr />
+
+    <form method="post" class="mt-4">
+        <div class="row">
+            <!-- Selección de Paciente -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.PacienteID" class="form-label">Paciente</label>
+                <select asp-for="Hospitalizacion.PacienteID" class="form-select">
+                    <option value="">Seleccione un paciente</option>
+                    @foreach (var paciente in Model.Pacientes)
+                    {
+                        <option value="@paciente.UsuarioID">
+                            @paciente.Nombre @paciente.Apellido
+                        </option>
+                    }
+                </select>
+                <span asp-validation-for="Hospitalizacion.PacienteID" class="text-danger"></span>
+            </div>
+
+            <!-- Selección de Habitación -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.HabitacionID" class="form-label">Habitación</label>
+                <select asp-for="Hospitalizacion.HabitacionID" class="form-select">
+                    <option value="">Seleccione una habitación</option>
+                    @foreach (var habitacion in Model.Habitaciones)
+                    {
+                        <option value="@habitacion.HabitacionID">
+                            Habitación @habitacion.Numero (@habitacion.Tipo)
+                        </option>
+                    }
+                </select>
+                <span asp-validation-for="Hospitalizacion.HabitacionID" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Fecha de Ingreso -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.FechaIngreso" class="form-label">Fecha de Ingreso</label>
+                <input asp-for="Hospitalizacion.FechaIngreso" type="date" class="form-control" />
+                <span asp-validation-for="Hospitalizacion.FechaIngreso" class="text-danger"></span>
+            </div>
+
+            <!-- Estado -->
+            <div class="col-md-6 mb-3">
+                <label asp-for="Hospitalizacion.Estado" class="form-label">Estado</label>
+                <select asp-for="Hospitalizacion.Estado" class="form-select">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+                <span asp-validation-for="Hospitalizacion.Estado" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="row mt-4">
+            <div class="col text-end">
+                <a asp-page="/Internacion/Index" class="btn btn-secondary">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

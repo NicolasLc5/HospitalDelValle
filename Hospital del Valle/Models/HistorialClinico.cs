@@ -32,5 +32,10 @@ namespace Hospital_del_Valle.Models
 
         public string Tratamiento { get; set; }
 
+
+        [ForeignKey(nameof(PacienteHospitalizado))]
+        public int? HospitalizacionID { get; set; }
+        // Relación con la hospitalización
+        public PacienteHospitalizado? Hospitalizacion { get; set; }
     }
 }

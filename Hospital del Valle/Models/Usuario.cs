@@ -39,5 +39,9 @@ namespace Hospital_del_Valle.Models
         // Relación con Prescripciones
         public ICollection<Prescripcion>? PrescripcionesComoPaciente { get; set; }
         public ICollection<Prescripcion>? PrescripcionesComoMedico { get; set; }
+
+        public ICollection<PacienteHospitalizado>? HospitalizacionesComoPaciente { get; set; }
+        public ICollection<PacienteHospitalizado>? HospitalizacionesComoMedico { get; set; }
+        public ICollection<PacienteHospitalizado>? HospitalizacionesComoEnfermero { get; set; }
     }
 }

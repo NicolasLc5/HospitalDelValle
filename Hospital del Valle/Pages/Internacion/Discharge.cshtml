@@ -1,0 +1,55 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.DischargeModel
+@{
+}
+
+<div class="container mt-5">
+    <h1>Dar de Alta al Paciente</h1>
+    <hr />
+
+    @if (Model.Hospitalizacion == null)
+    {
+        <div class="alert alert-danger">
+            <strong>Error:</strong> La hospitalización solicitada no existe.
+        </div>
+    }
+    else
+    {
+        <form method="post">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Información del Paciente</h4>
+                    <p><strong>Nombre:</strong> @Model.Hospitalizacion.Paciente.Nombre @Model.Hospitalizacion.Paciente.Apellido</p>
+                    <p><strong>Telefono:</strong> @Model.Hospitalizacion.Paciente.Telefono</p>
+                    <hr />
+
+                    <h4 class="card-title">Detalles de Alta</h4>
+
+                    <div class="mb-3">
+                        <label for="FechaAlta" class="form-label"><strong>Fecha de Alta</strong></label>
+                        <input type="date" id="FechaAlta" name="FechaAlta" class="form-control" value="@Model.Hospitalizacion.FechaAlta?.ToString("yyyy-MM-dd")" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Estado" class="form-label"><strong>Estado al momento del alta</strong></label>
+                        <select id="Estado" name="Estado" class="form-select" required>
+                            <option value="Recuperado" selected="@(Model.Hospitalizacion.Estado == "Recuperado")">Recuperado</option>
+                            <option value="En Tratamiento" selected="@(Model.Hospitalizacion.Estado == "En Tratamiento")">En Tratamiento</option>
+                            <option value="Fallecido" selected="@(Model.Hospitalizacion.Estado == "Fallecido")">Fallecido</option>
+                        </select>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="NotasSeguimiento" class="form-label"><strong>Notas de Seguimiento</strong></label>
+                        <textarea id="NotasSeguimiento" name="NotasSeguimiento" class="form-control" rows="4">@Model.Hospitalizacion.NotasSeguimiento</textarea>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <a asp-page="/PacienteHospitalizado/Index" class="btn btn-secondary">Cancelar</a>
+                    <button type="submit" class="btn btn-primary">Guardar Alta</button>
+                </div>
+            </div>
+        </form>
+    }
+</div>

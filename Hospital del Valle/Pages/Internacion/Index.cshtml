@@ -1,0 +1,102 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.IndexModel
+@{
+    ViewData["Title"] = "Gestión de Pacientes Hospitalizados";
+}
+
+<div class="container mt-5">
+    <!-- Título y Botón para Crear -->
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Gestión de Pacientes Hospitalizados</h1>
+        </div>
+        <div class="col-md-4 text-end">
+            <a asp-page="/Internacion/Create" class="btn btn-primary">
+                Registrar Nueva Hospitalización
+            </a>
+        </div>
+    </div>
+
+    <!-- Filtros de Búsqueda -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Buscar por Nombre" asp-for="BusquedaNombre" />
+        </div>
+        <div class="col-md-4">
+            <select class="form-select" asp-for="BusquedaEstado">
+                <option value="">Filtrar por Estado</option>
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select class="form-select" asp-for="BusquedaHabitacion">
+                <option value="">Filtrar por Habitación</option>
+                @foreach (var habitacion in Model.Habitaciones)
+                {
+                    <option value="@habitacion.HabitacionID">@habitacion.Numero</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <!-- Botón para Buscar -->
+    <div class="row mt-3">
+        <div class="col text-end">
+            <button type="submit" class="btn btn-secondary">Buscar</button>
+        </div>
+    </div>
+
+    <!-- Tabla de Pacientes Hospitalizados -->
+    <div class="row mt-4">
+        <div class="col">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Estado</th>
+                        <th>Habitación</th>
+                        <th>Fecha de Ingreso</th>
+                        <th>Fecha de Alta</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.PacientesHospitalizados.Count > 0)
+                    {
+                        foreach (var hospitalizacion in Model.PacientesHospitalizados)
+                        {
+                            <tr>
+                                <td>@hospitalizacion.Paciente.Nombre @hospitalizacion.Paciente.Apellido</td>
+                                <td>@hospitalizacion.Estado</td>
+                                <td>@hospitalizacion.Habitacion.Numero</td>
+                                <td>@hospitalizacion.FechaIngreso.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    @if (hospitalizacion.FechaAlta.HasValue)
+                                    {
+                                        @hospitalizacion.FechaAlta.Value.ToString("dd/MM/yyyy")
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">N/A</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-page="/Internacion/Details" asp-route-id="@hospitalizacion.HospitalizacionID" class="btn btn-info btn-sm">Detalles</a>
+                                    <a asp-page="/Internacion/Edit" asp-route-id="@hospitalizacion.HospitalizacionID" class="btn btn-warning btn-sm">Editar</a>
+                                    <a asp-page="/Internacion/Discharge" asp-route-id="@hospitalizacion.HospitalizacionID" class="btn btn-success btn-sm">Dar de Alta</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center">No se encontraron hospitalizaciones.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

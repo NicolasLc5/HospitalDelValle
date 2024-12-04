@@ -28,6 +28,7 @@ namespace Hospital_del_Valle.Data
 
         public DbSet<Notificacion> Notificaciones { get; set; }
 
+        public DbSet<Habitacion> Habitaciones { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -72,7 +73,34 @@ namespace Hospital_del_Valle.Data
                 .HasOne(pl => pl.Paciente)
                 .WithMany()
                 .HasForeignKey(pl => pl.PacienteID)
-                .OnDelete(DeleteBehavior.NoAction); 
+                .OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<PacienteHospitalizado>()
+                .HasOne(ph => ph.Paciente)
+                .WithMany(u => u.HospitalizacionesComoPaciente)
+                .HasForeignKey(ph => ph.PacienteID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<PacienteHospitalizado>()
+                .HasOne(ph => ph.MedicoResponsable)
+                .WithMany(u => u.HospitalizacionesComoMedico)
+                .HasForeignKey(ph => ph.MedicoID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<PacienteHospitalizado>()
+                .HasOne(ph => ph.EnfermeroEncargado)
+                .WithMany(u => u.HospitalizacionesComoEnfermero)
+                .HasForeignKey(ph => ph.EnfermeroID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<PacienteHospitalizado>()
+                .HasOne(ph => ph.Habitacion)
+                .WithMany(h => h.Hospitalizaciones)
+                .HasForeignKey(ph => ph.HabitacionID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Habitacion>()
+                .Property(h => h.Disponible)
+                .HasDefaultValue(true);
 
         }
 
