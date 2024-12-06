@@ -23,4 +23,11 @@
     <Folder Include="Pages\LYF\Laboratorio\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\Citas\MenuSelect.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

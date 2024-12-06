@@ -1,0 +1,54 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Citas.CitasLabo.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CitasReservas[0].Paciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CitasReservas[0].FechaReserva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CitasReservas[0].Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CitasReservas[0].Observaciones)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CitasReservas) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paciente.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaReserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observaciones)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ReservaID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ReservaID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ReservaID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

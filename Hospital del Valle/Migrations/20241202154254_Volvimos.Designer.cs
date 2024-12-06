@@ -4,6 +4,7 @@ using Hospital_del_Valle.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hospital_del_Valle.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241202154254_Volvimos")]
+    partial class Volvimos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,6 +51,9 @@ namespace Hospital_del_Valle.Migrations
                     b.Property<int>("PacienteID")
                         .HasColumnType("int");
 
+                    b.Property<string>("Resultado")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("CitaID");
 
                     b.HasIndex("MedicoID");
@@ -55,36 +61,6 @@ namespace Hospital_del_Valle.Migrations
                     b.HasIndex("PacienteID");
 
                     b.ToTable("Citas");
-                });
-
-            modelBuilder.Entity("Hospital_del_Valle.Models.CitasReservas", b =>
-                {
-                    b.Property<int>("ReservaID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReservaID"));
-
-                    b.Property<string>("Estado")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<DateTime>("FechaReserva")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Observaciones")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PacienteID")
-                        .HasColumnType("int");
-
-                    b.HasKey("ReservaID");
-
-                    b.HasIndex("PacienteID");
-
-                    b.ToTable("CitasReservas");
                 });
 
             modelBuilder.Entity("Hospital_del_Valle.Models.HistorialClinico", b =>
@@ -438,17 +414,6 @@ namespace Hospital_del_Valle.Migrations
                     b.Navigation("Paciente");
                 });
 
-            modelBuilder.Entity("Hospital_del_Valle.Models.CitasReservas", b =>
-                {
-                    b.HasOne("Hospital_del_Valle.Models.Usuario", "Paciente")
-                        .WithMany("CitasReservadasComoPaciente")
-                        .HasForeignKey("PacienteID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Paciente");
-                });
-
             modelBuilder.Entity("Hospital_del_Valle.Models.HistorialClinico", b =>
                 {
                     b.HasOne("Hospital_del_Valle.Models.Usuario", "Paciente")
@@ -566,8 +531,6 @@ namespace Hospital_del_Valle.Migrations
                     b.Navigation("CitasComoMedico");
 
                     b.Navigation("CitasComoPaciente");
-
-                    b.Navigation("CitasReservadasComoPaciente");
 
                     b.Navigation("PrescripcionesComoMedico");
 
