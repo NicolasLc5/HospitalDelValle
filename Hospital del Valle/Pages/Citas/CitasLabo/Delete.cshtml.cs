@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +29,6 @@ namespace Hospital_del_Valle.Pages.Citas.CitasLabo
             }
 
             var citasreservas = await _context.CitasReservas.FirstOrDefaultAsync(m => m.ReservaID == id);
-
             if (citasreservas == null)
             {
                 return NotFound();

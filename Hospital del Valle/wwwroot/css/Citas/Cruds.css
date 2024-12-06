@@ -1,0 +1,225 @@
+﻿/* General para todas las vistas CRUD */
+.container-crud {
+    max-width: 900px; /* Ancho máximo del contenedor */
+    margin: 30px auto; /* Centrado en la página */
+    padding: 30px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    color: #0D6EFD; /* Azul profesional actualizado */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #4A4A4A; /* Gris oscuro para subtítulos */
+}
+
+/* Para las tablas en la vista Index */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .table th,
+    .table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #e1e1e1;
+    }
+
+    .table th {
+        background-color: #0D6EFD; /* Azul profesional actualizado */
+        color: white;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f9f9f9; /* Fila alterna con fondo claro */
+    }
+
+    .table tbody tr:hover {
+        background-color: #f1f1f1; /* Efecto hover */
+    }
+
+/* Estilo para los botones en todas las vistas CRUD */
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+/* Botón principal (Crear, Editar) */
+.btn-primary {
+    background-color: #0D6EFD; /* Azul profesional actualizado */
+    color: white;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #3B5BBF; /* Azul suave en hover */
+        transform: translateY(-3px); /* Levanta el botón */
+    }
+
+    .btn-primary:active {
+        background-color: #142F6D; /* Azul oscuro cuando está presionado */
+        transform: translateY(1px); /* Baja el botón */
+    }
+
+/* Botón de eliminar (Rojo) */
+.btn-danger {
+    background-color: #E11D48; /* Rojo brillante */
+    color: white;
+    border: none;
+}
+
+    .btn-danger:hover {
+        background-color: #F43F5E; /* Rojo más suave en hover */
+        transform: translateY(-3px);
+    }
+
+    .btn-danger:active {
+        background-color: #9B2133; /* Rojo oscuro en clic */
+        transform: translateY(1px);
+    }
+
+/* Botón de Cancelar (Secundario) */
+.btn-secondary {
+    background-color: #D1D5DB; /* Gris suave */
+    color: black;
+    border: none;
+}
+
+    .btn-secondary:hover {
+        background-color: #A1A9B3; /* Gris oscuro en hover */
+        transform: translateY(-3px);
+    }
+
+    .btn-secondary:active {
+        background-color: #6B7280; /* Gris más oscuro */
+        transform: translateY(1px);
+    }
+
+/* Para formularios en Create/Edit */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+    .form-control:focus {
+        border-color: #0D6EFD; /* Bordes azules cuando el campo está activo */
+        box-shadow: 0 0 5px rgba(13, 110, 253, 0.5); /* Sombra azul suave */
+    }
+
+.text-danger {
+    color: #E11D48; /* Color rojo para mensajes de error */
+}
+
+/* Para las vistas Details y Delete */
+.dl-horizontal dt {
+    font-weight: bold;
+    color: #0D6EFD; /* Azul para los nombres de campo actualizado */
+}
+
+.dl-horizontal dd {
+    margin-bottom: 10px;
+    color: #4A4A4A; /* Gris suave para los valores */
+}
+
+.dl-horizontal {
+    margin-left: 0;
+}
+
+/* Espacio adicional entre la cabecera y el contenido */
+.row {
+    margin-top: 20px;
+}
+
+/* Contenedor para los botones */
+.btn-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: start; /* Alinea los botones a la izquierda */
+    align-items: center; /* Asegura que estén centrados verticalmente */
+    margin-top: 10px;
+}
+
+/* Estilos básicos para los botones */
+.btn-action {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Remueve el subrayado por defecto */
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    margin: 0; /* Elimina el margen por defecto para evitar separación adicional */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón Editar */
+.btn-edit {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+    .btn-edit:hover {
+        background-color: #45a049;
+        transform: translateY(-3px); /* Efecto de elevación */
+    }
+
+    .btn-edit:active {
+        background-color: #388e3c;
+        transform: translateY(1px); /* Efecto de clic */
+    }
+
+/* Botón Detalles */
+.btn-details {
+    background-color: #0D6EFD; /* Azul actualizado */
+    color: white;
+}
+
+    .btn-details:hover {
+        background-color: #3B5BBF;
+        transform: translateY(-3px);
+    }
+
+    .btn-details:active {
+        background-color: #142F6D;
+        transform: translateY(1px);
+    }
+
+/* Botón Eliminar */
+.btn-delete {
+    background-color: #E11D48; /* Rojo */
+    color: white;
+}
+
+    .btn-delete:hover {
+        background-color: #F43F5E;
+        transform: translateY(-3px);
+    }
+
+    .btn-delete:active {
+        background-color: #9B2133;
+        transform: translateY(1px);
+    }

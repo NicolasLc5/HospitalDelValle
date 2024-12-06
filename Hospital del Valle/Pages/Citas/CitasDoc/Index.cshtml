@@ -4,12 +4,14 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link href="~/css/citas/Cruds.css" rel="stylesheet" />
 
-<h1>Index</h1>
+<div class="container-crud">
+<h1>Citas con Doctores</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
-</p>
+        <a class="btn btn-primary" asp-page="Create">Nueva Cita</a>
+ </p>
 <table class="table">
     <thead>
         <tr>
@@ -50,11 +52,14 @@
                 @Html.DisplayFor(modelItem => item.Observaciones)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.CitaID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.CitaID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.CitaID">Delete</a>
-            </td>
+                        <div class="btn-container">
+                        <a class="btn-action btn-edit" asp-page="./Edit" asp-route-id="@item.CitaID">Edit</a> 
+                        <a class="btn-action btn-details" asp-page="./Details" asp-route-id="@item.CitaID">Details</a> 
+                        <a class="btn-action btn-delete" asp-page="./Delete" asp-route-id="@item.CitaID">Delete</a>
+                        </div>
+           </td>
         </tr>
 }
     </tbody>
 </table>
+    <div>

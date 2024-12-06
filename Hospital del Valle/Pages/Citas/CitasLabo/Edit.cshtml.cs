@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -30,18 +29,17 @@ namespace Hospital_del_Valle.Pages.Citas.CitasLabo
                 return NotFound();
             }
 
-            var citasreservas =  await _context.CitasReservas.FirstOrDefaultAsync(m => m.ReservaID == id);
+            var citasreservas = await _context.CitasReservas.FirstOrDefaultAsync(m => m.ReservaID == id);
             if (citasreservas == null)
             {
                 return NotFound();
             }
             CitasReservas = citasreservas;
-           ViewData["PacienteID"] = new SelectList(_context.Usuarios, "UsuarioID", "Apellido");
+            // Cargar pacientes para el dropdown
+            ViewData["PacienteID"] = new SelectList(_context.Usuarios, "UsuarioID", "Apellido");
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

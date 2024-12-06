@@ -4,40 +4,50 @@
 @{
     ViewData["Title"] = "Details";
 }
+<link href="~/css/citas/Cruds.css" rel="stylesheet" />
+<div class="container-crud">
+    <h1>Details</h1>
 
-<h1>Details</h1>
-
-<div>
-    <h4>CitasReservas</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CitasReservas.Paciente)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CitasReservas.Paciente.Apellido)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CitasReservas.FechaReserva)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CitasReservas.FechaReserva)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CitasReservas.Estado)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CitasReservas.Estado)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CitasReservas.Observaciones)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CitasReservas.Observaciones)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.CitasReservas.ReservaID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <div>
+        <h4>CitasReservas</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CitasReservas.Paciente)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CitasReservas.Paciente.Apellido)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CitasReservas.FechaReserva)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CitasReservas.FechaReserva)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CitasReservas.Estado)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CitasReservas.Estado)
+            </dd>
+            <!-- Mostrar Nombre del Laboratorio -->
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CitasReservas.NombreLaboratorio)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CitasReservas.NombreLaboratorio)
+            </dd>
+            <!-- Mostrar Resultado -->
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CitasReservas.Resultado)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CitasReservas.Resultado)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-page="./Edit" asp-route-id="@Model.CitasReservas.ReservaID">Edit</a> |
+        <a asp-page="./Index">Back to List</a>
+    </div>
 </div>

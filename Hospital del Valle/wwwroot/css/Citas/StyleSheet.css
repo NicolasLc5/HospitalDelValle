@@ -1,0 +1,64 @@
+﻿/* Contenedor del cuadro */
+.container-box {
+    width: 100%;
+    max-width: 600px; /* Máxima anchura del cuadro */
+    margin: 50px auto; /* Centra el cuadro en la página */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fondo gris suave para el cuadro */
+    text-align: center; /* Centra el contenido dentro del cuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+    /* Título dentro del cuadro */
+    .container-box h1 {
+        color: #0D6EFD; /* Azul profesional para el título */
+        font-size: 24px;
+        margin-bottom: 20px; /* Espacio debajo del título */
+    }
+
+/* Estilos para los botones (ya existentes) */
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0; /* Espacio entre los botones */
+    width: 100%; /* Hace que los botones ocupen el 100% del contenedor */
+}
+
+/* Botón "Paciente Nuevo" */
+.btn-primary {
+    background-color: #0D6EFD; /* Azul profesional */
+    color: white;
+    border: 1px solid #0D6EFD;
+}
+
+    .btn-primary:hover {
+        background-color: #3B5BBF; /* Azul más suave para hover */
+        transform: translateY(-3px); /* Efecto de hover levantando el botón */
+    }
+
+    .btn-primary:active {
+        background-color: #142F6D; /* Azul oscuro para el estado activo */
+        transform: translateY(1px);
+    }
+
+/* Botón "Paciente Antiguo" */
+.btn-secondary {
+    background-color: #4A4A4A; /* Gris oscuro */
+    color: white;
+    border: 1px solid #4A4A4A;
+}
+
+    .btn-secondary:hover {
+        background-color: #6D6D6D; /* Gris más claro para hover */
+        transform: translateY(-3px); /* Efecto de hover levantando el botón */
+    }
+
+    .btn-secondary:active {
+        background-color: #333333; /* Gris oscuro para el estado activo */
+        transform: translateY(1px);
+    }

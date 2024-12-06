@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -21,14 +20,14 @@ namespace Hospital_del_Valle.Pages.Citas.CitasLabo
 
         public IActionResult OnGet()
         {
-        ViewData["PacienteID"] = new SelectList(_context.Usuarios, "UsuarioID", "Apellido");
+            // Asegúrate de cargar la lista de pacientes para el campo select
+            ViewData["PacienteID"] = new SelectList(_context.Usuarios, "UsuarioID", "Apellido");
             return Page();
         }
 
         [BindProperty]
         public CitasReservas CitasReservas { get; set; } = default!;
 
-        // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -36,9 +35,11 @@ namespace Hospital_del_Valle.Pages.Citas.CitasLabo
                 return Page();
             }
 
+            // Añadir la nueva cita a la base de datos
             _context.CitasReservas.Add(CitasReservas);
             await _context.SaveChangesAsync();
 
+            // Redirigir al listado de citas
             return RedirectToPage("./Index");
         }
     }

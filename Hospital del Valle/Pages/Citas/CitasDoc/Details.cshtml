@@ -4,7 +4,9 @@
 @{
     ViewData["Title"] = "Details";
 }
+<link href="~/css/citas/Cruds.css" rel="stylesheet" />
 
+<div class="container-crud">
 <h1>Details</h1>
 
 <div>
@@ -47,3 +49,4 @@
     <a asp-page="./Edit" asp-route-id="@Model.Cita.CitaID">Edit</a> |
     <a asp-page="./Index">Back to List</a>
 </div>
+    <div>

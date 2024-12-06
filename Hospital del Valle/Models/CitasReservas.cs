@@ -24,5 +24,8 @@ namespace Hospital_del_Valle.Models
         public string Estado { get; set; }
 
         public string Observaciones { get; set; }
+
+        public string Resultado { get; set; }  // Campo para el resultado
+        public string NombreLaboratorio { get; set; }  // Campo para el nombre del laboratorio
     }
 }
