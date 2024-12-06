@@ -1,0 +1,38 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.MonitoreoSignosVitalesModel
+@{
+}
+
+<div class="container mt-5">
+    <h1>Monitoreo de Signos Vitales</h1>
+    <hr />
+
+    <div class="mb-3">
+        <a asp-page="/Internacion/RegistrarSignosVitales" class="btn btn-primary">Registrar Cambio</a>
+    </div>
+
+    <table class="table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Temperatura (°C)</th>
+                <th>Presión Arterial</th>
+                <th>Frecuencia Cardíaca (bpm)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024-12-01</td>
+                <td>37.2</td>
+                <td>120/80</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>2024-12-02</td>
+                <td>38.0</td>
+                <td>130/85</td>
+                <td>78</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

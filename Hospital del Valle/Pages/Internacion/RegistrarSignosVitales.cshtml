@@ -1,0 +1,36 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.RegistrarSignosVitalesModel
+@{
+}
+
+<div class="container mt-5">
+    <h1>Registrar Signos Vitales</h1>
+    <hr />
+
+    <form method="post" class="mt-4">
+        <div class="mb-3">
+            <label for="Fecha" class="form-label">Fecha</label>
+            <input id="Fecha" name="Fecha" type="date" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Temperatura" class="form-label">Temperatura (°C)</label>
+            <input id="Temperatura" name="Temperatura" type="number" class="form-control" step="0.1" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Presion" class="form-label">Presión Arterial</label>
+            <input id="Presion" name="Presion" type="text" class="form-control" placeholder="Ejemplo: 120/80" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Frecuencia" class="form-label">Frecuencia Cardíaca (bpm)</label>
+            <input id="Frecuencia" name="Frecuencia" type="number" class="form-control" required />
+        </div>
+
+        <div class="text-end">
+            <a asp-page="/Internacion/MonitoreoSignosVitales" class="btn btn-secondary">Cancelar</a>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>

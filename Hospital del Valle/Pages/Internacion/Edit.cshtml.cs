@@ -25,13 +25,13 @@ namespace Hospital_del_Valle.Pages.Internacion
         public async Task<IActionResult> OnGetAsync(int id)
         {
             // Buscar hospitalización
-            Hospitalizacion = await _context.PacientesHospitalizados
-                .FirstOrDefaultAsync(h => h.HospitalizacionID == id);
+            //Hospitalizacion = await _context.PacientesHospitalizados
+            //    .FirstOrDefaultAsync(h => h.HospitalizacionID == id);
 
-            if (Hospitalizacion == null)
-            {
-                return NotFound();
-            }
+            //if (Hospitalizacion == null)
+            //{
+            //    return NotFound();
+            //}
 
             // Obtener pacientes y habitaciones
             Pacientes = await _context.Usuarios

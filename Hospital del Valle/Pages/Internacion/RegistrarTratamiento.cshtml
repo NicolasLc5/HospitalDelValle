@@ -1,0 +1,34 @@
+﻿@page
+@model Hospital_del_Valle.Pages.Internacion.RegistrarTratamientoModel
+@{
+}
+
+<div class="container mt-5">
+    <h1>Registrar Tratamiento</h1>
+    <hr />
+
+    <form method="post" class="mt-4">
+        <div class="mb-3">
+            <label for="Fecha" class="form-label">Fecha</label>
+            <input id="Fecha" name="Fecha" type="date" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Descripcion" class="form-label">Descripción</label>
+            <textarea id="Descripcion" name="Descripcion" class="form-control" rows="3" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="Responsable" class="form-label">Responsable</label>
+            <select id="Responsable" name="Responsable" class="form-select" required>
+                <option value="1">Dra. Ana López</option>
+                <option value="2">Dr. Carlos Pérez</option>
+            </select>
+        </div>
+
+        <div class="text-end">
+            <a asp-page="/Internacion/Seguimiento" class="btn btn-secondary">Cancelar</a>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>

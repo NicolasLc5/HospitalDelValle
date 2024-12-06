@@ -20,15 +20,15 @@ namespace Hospital_del_Valle.Pages.Internacion
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            Hospitalizacion = await _context.PacientesHospitalizados
-                .Include(h => h.Paciente)
-                .Include(h => h.Habitacion)
-                .FirstOrDefaultAsync(m => m.HospitalizacionID == id);
+            //Hospitalizacion = await _context.PacientesHospitalizados
+            //    .Include(h => h.Paciente)
+            //    .Include(h => h.Habitacion)
+            //    .FirstOrDefaultAsync(m => m.HospitalizacionID == id);
 
-            if (Hospitalizacion == null)
-            {
-                return NotFound();
-            }
+            //if (Hospitalizacion == null)
+            //{
+            //    return NotFound();
+            //}
 
             return Page();
         }

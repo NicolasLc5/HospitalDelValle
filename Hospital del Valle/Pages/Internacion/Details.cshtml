@@ -3,44 +3,23 @@
 @{
 }
 
-<div class="container mt-5">
-    <h1>Detalles de Hospitalización</h1>
-    <hr />
+<h1>Detalles del Paciente Hospitalizado</h1>
 
-    @if (Model.Hospitalizacion == null)
-    {
-        <div class="alert alert-danger">
-            <strong>Error:</strong> La hospitalización solicitada no existe.
-        </div>
-    }
-    else
-    {
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <!-- Información del paciente -->
-                <h4 class="card-title">Información del Paciente</h4>
-                <p><strong>Nombre:</strong> @Model.Hospitalizacion.Paciente.Nombre @Model.Hospitalizacion.Paciente.Apellido</p>
-                <p><strong>Telefono:</strong> @Model.Hospitalizacion.Paciente.Telefono</p>
+<div class="card">
+    <div class="card-header">
+        <h2>Información del Paciente</h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Nombre:</strong> Juan Pérez</p>
+        <p><strong>Fecha de Ingreso:</strong> 2024-11-01</p>
+        <p><strong>Diagnóstico:</strong> Neumonía</p>
+        <p><strong>Estado:</strong> En Tratamiento</p>
+        <p><strong>Habitación:</strong> 202</p>
+        <p><strong>Médico a Cargo:</strong> Dr. María Rodríguez</p>
+    </div>
+</div>
 
-                <hr />
-
-                <!-- Información de la hospitalización -->
-                <h4 class="card-title">Detalles de la Hospitalización</h4>
-                <p><strong>Habitación:</strong> Habitación @Model.Hospitalizacion.Habitacion.Numero (@Model.Hospitalizacion.Habitacion.Tipo)</p>
-                <p><strong>Fecha de Ingreso:</strong> @Model.Hospitalizacion.FechaIngreso.ToString("dd/MM/yyyy")</p>
-                <p><strong>Fecha de Alta:</strong> @(Model.Hospitalizacion.FechaAlta?.ToString("dd/MM/yyyy") ?? "Aún no asignada")</p>
-                <p><strong>Estado:</strong> @Model.Hospitalizacion.Estado</p>
-
-                <hr />
-
-                <!-- Notas de seguimiento -->
-                <h4 class="card-title">Notas de Seguimiento</h4>
-                <p>@(string.IsNullOrWhiteSpace(Model.Hospitalizacion.NotasSeguimiento) ? "No hay notas registradas." : Model.Hospitalizacion.NotasSeguimiento)</p>
-            </div>
-            <div class="card-footer text-end">
-                <a asp-page="/PacienteHospitalizado/Index" class="btn btn-secondary">Volver</a>
-                <a asp-page="/PacienteHospitalizado/Edit" asp-route-id="@Model.Hospitalizacion.HospitalizacionID" class="btn btn-primary">Editar</a>
-            </div>
-        </div>
-    }
+<div class="mt-3">
+    <a asp-page="Index" class="btn btn-secondary">Volver al Listado</a>
+    <a asp-page="Edit" asp-route-id="1" class="btn btn-warning">Editar Información</a>
 </div>

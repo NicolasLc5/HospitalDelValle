@@ -2,54 +2,33 @@
 @model Hospital_del_Valle.Pages.Internacion.DischargeModel
 @{
 }
+<h1>Dar de Alta al Paciente</h1>
 
-<div class="container mt-5">
-    <h1>Dar de Alta al Paciente</h1>
-    <hr />
+<div class="alert alert-warning" role="alert">
+    <p>Está a punto de dar de alta al paciente <strong>Juan Pérez</strong>, ingresado el <strong>2024-11-01</strong> por <strong>Neumonía</strong>.</p>
+    <p>Por favor, confirme la información antes de proceder.</p>
+</div>
 
-    @if (Model.Hospitalizacion == null)
-    {
-        <div class="alert alert-danger">
-            <strong>Error:</strong> La hospitalización solicitada no existe.
-        </div>
-    }
-    else
-    {
-        <form method="post">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h4 class="card-title">Información del Paciente</h4>
-                    <p><strong>Nombre:</strong> @Model.Hospitalizacion.Paciente.Nombre @Model.Hospitalizacion.Paciente.Apellido</p>
-                    <p><strong>Telefono:</strong> @Model.Hospitalizacion.Paciente.Telefono</p>
-                    <hr />
+<div class="card mb-3">
+    <div class="card-header">
+        <h2>Información del Paciente</h2>
+    </div>
+    <div class="card-body">
+        <p><strong>Nombre:</strong> Juan Pérez</p>
+        <p><strong>Fecha de Ingreso:</strong> 2024-11-01</p>
+        <p><strong>Estado Actual:</strong> En Tratamiento</p>
+    </div>
+</div>
 
-                    <h4 class="card-title">Detalles de Alta</h4>
+<div class="mb-3">
+    <label for="Estado" class="form-label">Actualizar Estado</label>
+    <select id="Estado" name="Estado" class="form-select" required>
+        <option value="Recuperado">Recuperado</option>
+        <option value="Fallecido">Fallecido</option>
+    </select>
+</div>
 
-                    <div class="mb-3">
-                        <label for="FechaAlta" class="form-label"><strong>Fecha de Alta</strong></label>
-                        <input type="date" id="FechaAlta" name="FechaAlta" class="form-control" value="@Model.Hospitalizacion.FechaAlta?.ToString("yyyy-MM-dd")" required />
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="Estado" class="form-label"><strong>Estado al momento del alta</strong></label>
-                        <select id="Estado" name="Estado" class="form-select" required>
-                            <option value="Recuperado" selected="@(Model.Hospitalizacion.Estado == "Recuperado")">Recuperado</option>
-                            <option value="En Tratamiento" selected="@(Model.Hospitalizacion.Estado == "En Tratamiento")">En Tratamiento</option>
-                            <option value="Fallecido" selected="@(Model.Hospitalizacion.Estado == "Fallecido")">Fallecido</option>
-                        </select>
-
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="NotasSeguimiento" class="form-label"><strong>Notas de Seguimiento</strong></label>
-                        <textarea id="NotasSeguimiento" name="NotasSeguimiento" class="form-control" rows="4">@Model.Hospitalizacion.NotasSeguimiento</textarea>
-                    </div>
-                </div>
-                <div class="card-footer text-end">
-                    <a asp-page="/PacienteHospitalizado/Index" class="btn btn-secondary">Cancelar</a>
-                    <button type="submit" class="btn btn-primary">Guardar Alta</button>
-                </div>
-            </div>
-        </form>
-    }
+<div class="d-flex justify-content-between">
+    <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+    <button type="submit" class="btn btn-danger">Confirmar Alta</button>
 </div>

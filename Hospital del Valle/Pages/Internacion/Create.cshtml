@@ -1,5 +1,4 @@
 ﻿@page
-@model Hospital_del_Valle.Pages.Internacion.CreateModel
 @{
     ViewData["Title"] = "Registrar Nueva Hospitalización";
 }
@@ -12,64 +11,50 @@
         <div class="row">
             <!-- Selección de Paciente -->
             <div class="col-md-6 mb-3">
-                <label asp-for="Hospitalizacion.PacienteID" class="form-label">Paciente</label>
-                <select asp-for="Hospitalizacion.PacienteID" class="form-select">
+                <label for="PacienteID" class="form-label">Paciente</label>
+                <select id="PacienteID" name="PacienteID" class="form-select" required>
                     <option value="">Seleccione un paciente</option>
-                    @foreach (var paciente in Model.Pacientes)
-                    {
-                        <option value="@paciente.UsuarioID">
-                            @paciente.Nombre @paciente.Apellido
-                        </option>
-                    }
+                    <option value="1">Juan Pérez</option>
+                    <option value="2">Ana López</option>
+                    <option value="3">Carlos Mendoza</option>
                 </select>
-                <span asp-validation-for="Hospitalizacion.PacienteID" class="text-danger"></span>
             </div>
 
             <!-- Selección de Habitación -->
             <div class="col-md-6 mb-3">
-                <label asp-for="Hospitalizacion.HabitacionID" class="form-label">Habitación</label>
-                <select asp-for="Hospitalizacion.HabitacionID" class="form-select">
+                <label for="HabitacionID" class="form-label">Habitación</label>
+                <select id="HabitacionID" name="HabitacionID" class="form-select" required>
                     <option value="">Seleccione una habitación</option>
-                    @foreach (var habitacion in Model.Habitaciones)
-                    {
-                        <option value="@habitacion.HabitacionID">
-                            Habitación @habitacion.Numero (@habitacion.Tipo)
-                        </option>
-                    }
+                    <option value="101">Habitación 101 (Individual)</option>
+                    <option value="202">Habitación 202 (Doble)</option>
+                    <option value="303">Habitación 303 (Suite)</option>
                 </select>
-                <span asp-validation-for="Hospitalizacion.HabitacionID" class="text-danger"></span>
             </div>
         </div>
 
         <div class="row">
             <!-- Fecha de Ingreso -->
             <div class="col-md-6 mb-3">
-                <label asp-for="Hospitalizacion.FechaIngreso" class="form-label">Fecha de Ingreso</label>
-                <input asp-for="Hospitalizacion.FechaIngreso" type="date" class="form-control" />
-                <span asp-validation-for="Hospitalizacion.FechaIngreso" class="text-danger"></span>
+                <label for="FechaIngreso" class="form-label">Fecha de Ingreso</label>
+                <input id="FechaIngreso" name="FechaIngreso" type="date" class="form-control" value="2024-12-01" required />
             </div>
 
             <!-- Estado -->
             <div class="col-md-6 mb-3">
-                <label asp-for="Hospitalizacion.Estado" class="form-label">Estado</label>
-                <select asp-for="Hospitalizacion.Estado" class="form-select">
+                <label for="Estado" class="form-label">Estado</label>
+                <select id="Estado" name="Estado" class="form-select" required>
                     <option value="Activo">Activo</option>
                     <option value="Inactivo">Inactivo</option>
                 </select>
-                <span asp-validation-for="Hospitalizacion.Estado" class="text-danger"></span>
             </div>
         </div>
 
         <!-- Botones -->
         <div class="row mt-4">
             <div class="col text-end">
-                <a asp-page="/Internacion/Index" class="btn btn-secondary">Cancelar</a>
+                <a href="/Internacion/Index" class="btn btn-secondary">Cancelar</a>
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </div>
         </div>
     </form>
 </div>
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
